@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <!-- Sentry error logging -->
+    <script src="https://browser.sentry-cdn.com/5.6.3/bundle.js" crossorigin="anonymous"></script>
+    <script src="assets/ts/util/sentry.ts"></script>
+
+    <!-- Firebase performance monitoring -->
+    <script type="text/javascript" src="assets/ts/util/firebase.ts"></script>
+
+    <!-- Register service worker -->
+    <script src="assets/ts/util/registerServiceWorker.ts"></script>
+
+    <!-- CSS and formatting -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/styles/style.scss" />
+
+    <!-- SEO meta tags -->
+    <title>Zero Width Shortener-404Lab</title>
+    <meta name="twitter:title" content="Zero Width Shortener" />
+    <meta name="og:site_name" content="Zero Width Shortener" />
+    <meta property="og:title" content="Zero Width Shortener" />
+
+    <meta property="og:url" content="https://zws.im/" />
+    <link rel="canonical" href="https://zws.im/" />
+
+    <meta name="language" content="EN" />
+    <meta property="og:locale" content="en_US" />
+
+    <meta name="description" content="Shorten URLs using invisible spaces." />
+    <meta name="twitter:description" content="Shorten URLs using invisible spaces." />
+    <meta property="og:description" content="Shorten URLs using invisible spaces." />
+
+    <meta property="og:type" content="website" />
+
+    <meta name="twitter:card" content="summary" />
+
+    <meta name="theme-color" content="#F5F5F5" />
+
+    <meta name="keywords" content="zero, width, shortener, url, url shortener, zero-width, zws" />
+
+    <link rel="icon" href="./assets/image/logo-512.png" />
+    <link rel="apple-touch-icon" href="./assets/image/logo-192.png" />
+
+    <link rel="manifest" href="./manifest.webmanifest" />
+</head>
+
+<body>
+    <header>
+        <section class="section">
+            <h1 class="title">ZWS By 404Lab <svg width="135" height="20" viewBox="0 0 135 20" fill="none"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <path
+                        d="M67.5 0.5H131C131.928 0.5 132.818 0.868749 133.475 1.52513C134.131 2.1815 134.5 3.07174 134.5 4V16C134.5 16.9283 134.131 17.8185 133.475 18.4749C132.818 19.1313 131.928 19.5 131 19.5H67.5V0.5Z"
+                        fill="#C9EEEB" stroke="#0D544F" />
+                    <path
+                        d="M0.5 4C0.5 3.07174 0.868749 2.1815 1.52513 1.52513C2.1815 0.868749 3.07174 0.5 4 0.5H67.5V19.5H4C3.07174 19.5 2.1815 19.1313 1.52513 18.4749C0.868749 17.8185 0.5 16.9283 0.5 16V4Z"
+                        fill="#0E1E25" stroke="#2D3B41" />
+                    <rect x="4" y="3" width="14" height="14.4118" fill="url(#pattern0)" />
+                    <path
+                        d="M83.9707 5.92383V11.6895H85.2539V13.0664H83.9707V15H82.248V13.0664H78.1934V11.6777C79.0332 10.7402 79.8203 9.74805 80.5547 8.70117C81.2891 7.6543 81.8438 6.72852 82.2188 5.92383H83.9707ZM79.8691 11.6895H82.248V8.36133C82.0605 8.71289 81.791 9.13867 81.4395 9.63867C81.0918 10.1387 80.5684 10.8223 79.8691 11.6895ZM86.2833 10.6113C86.2833 9.04102 86.5723 7.8418 87.1505 7.01367C87.7286 6.18555 88.5645 5.77148 89.6583 5.77148C91.7442 5.77148 92.7872 7.31445 92.7872 10.4004C92.7872 11.9199 92.504 13.0938 91.9376 13.9219C91.3712 14.7461 90.5528 15.1582 89.4825 15.1582C87.3497 15.1582 86.2833 13.6426 86.2833 10.6113ZM88.1993 10.5645C88.1993 12.6582 88.6466 13.7051 89.5411 13.7051C90.42 13.7051 90.8595 12.627 90.8595 10.4707C90.8595 8.30664 90.4317 7.22461 89.5763 7.22461C88.6583 7.22461 88.1993 8.33789 88.1993 10.5645ZM99.6232 5.92383V11.6895H100.906V13.0664H99.6232V15H97.9005V13.0664H93.8459V11.6777C94.6857 10.7402 95.4728 9.74805 96.2072 8.70117C96.9416 7.6543 97.4963 6.72852 97.8713 5.92383H99.6232ZM95.5216 11.6895H97.9005V8.36133C97.713 8.71289 97.4435 9.13867 97.092 9.63867C96.7443 10.1387 96.2209 10.8223 95.5216 11.6895ZM107.854 15H102.528V5.92383H104.461V13.418H107.854V15ZM109.481 8.91211C109.774 8.74805 110.164 8.61523 110.653 8.51367C111.145 8.41211 111.565 8.36133 111.912 8.36133C113.725 8.36133 114.631 9.26953 114.631 11.0859V15H112.832V14.0566H112.809C112.368 14.791 111.721 15.1582 110.869 15.1582C110.256 15.1582 109.764 14.9844 109.393 14.6367C109.026 14.2852 108.842 13.8086 108.842 13.207C108.842 11.9648 109.582 11.2422 111.063 11.0391L112.844 10.7988C112.844 10.0449 112.451 9.66797 111.666 9.66797C110.893 9.66797 110.164 9.90234 109.481 10.3711V8.91211ZM111.619 12.0645C110.936 12.1543 110.594 12.4629 110.594 12.9902C110.594 13.2324 110.676 13.4277 110.84 13.5762C111.008 13.7246 111.233 13.7988 111.514 13.7988C111.901 13.7988 112.219 13.6621 112.469 13.3887C112.719 13.1152 112.844 12.7754 112.844 12.3691V11.9062L111.619 12.0645ZM118.573 14.2207V15H116.68V5.4082H118.573V9.50977H118.596C119.092 8.74414 119.799 8.36133 120.717 8.36133C121.534 8.36133 122.172 8.64648 122.633 9.2168C123.098 9.78711 123.33 10.5742 123.33 11.5781C123.33 12.6523 123.065 13.5176 122.534 14.1738C122.002 14.8301 121.297 15.1582 120.418 15.1582C119.614 15.1582 119.006 14.8457 118.596 14.2207H118.573ZM118.543 12.1992C118.543 12.625 118.67 12.9824 118.924 13.2715C119.178 13.5605 119.5 13.7051 119.891 13.7051C120.364 13.7051 120.731 13.5215 120.993 13.1543C121.258 12.7871 121.391 12.2676 121.391 11.5957C121.391 11.0371 121.27 10.6016 121.028 10.2891C120.789 9.97266 120.448 9.81445 120.002 9.81445C119.58 9.81445 119.231 9.97266 118.954 10.2891C118.68 10.6055 118.543 11.0117 118.543 11.5078V12.1992Z"
+                        fill="url(#paint0_linear)" />
+                    <path
+                        d="M29.9238 15H27.8145L27.1348 12.9199H23.8359L23.168 15H21.0703L24.3926 5.92383H26.666L29.9238 15ZM26.6777 11.4258L25.6465 8.2793C25.5801 8.08008 25.5332 7.81641 25.5059 7.48828H25.4531C25.4297 7.75391 25.377 8.00977 25.2949 8.25586L24.2578 11.4258H26.6777ZM37.1834 15H35.3025V14.0098H35.2732C34.7888 14.7754 34.1267 15.1582 33.2869 15.1582C31.7791 15.1582 31.0252 14.248 31.0252 12.4277V8.51953H32.9177V12.252C32.9177 13.2207 33.2966 13.7051 34.0545 13.7051C34.4334 13.7051 34.7361 13.5723 34.9627 13.3066C35.1892 13.041 35.3025 12.6816 35.3025 12.2285V8.51953H37.1834V15ZM42.9605 14.9238C42.6753 15.0801 42.2437 15.1582 41.6655 15.1582C40.2905 15.1582 39.603 14.4355 39.603 12.9902V9.93164H38.5366V8.51953H39.603V7.0957L41.4839 6.55664V8.51953H42.9605V9.93164H41.4839V12.6621C41.4839 13.3535 41.7573 13.6992 42.3042 13.6992C42.5152 13.6992 42.7339 13.6367 42.9605 13.5117V14.9238ZM50.4778 15H48.5911V11.3086C48.5911 10.3125 48.2278 9.81445 47.5012 9.81445C47.138 9.81445 46.8372 9.95312 46.5989 10.2305C46.3645 10.5078 46.2473 10.8672 46.2473 11.3086V15H44.3548V5.4082H46.2473V9.49219H46.2708C46.7669 8.73828 47.4348 8.36133 48.2747 8.36133C49.7434 8.36133 50.4778 9.24805 50.4778 11.0215V15ZM51.9541 11.7891C51.9541 10.7227 52.2725 9.88477 52.9092 9.27539C53.5498 8.66602 54.4092 8.36133 55.4873 8.36133C56.5303 8.36133 57.3584 8.66211 57.9717 9.26367C58.585 9.86133 58.8916 10.666 58.8916 11.6777C58.8916 12.7402 58.5772 13.5859 57.9483 14.2148C57.3194 14.8438 56.4678 15.1582 55.3936 15.1582C54.3389 15.1582 53.501 14.8574 52.8799 14.2559C52.2627 13.6504 51.9541 12.8281 51.9541 11.7891ZM53.8702 11.7656C53.8702 13.0586 54.3975 13.7051 55.4522 13.7051C56.4639 13.7051 56.9698 13.041 56.9698 11.7129C56.9698 10.4473 56.46 9.81445 55.4405 9.81445C54.9444 9.81445 54.5577 9.98438 54.2803 10.3242C54.0069 10.6641 53.8702 11.1445 53.8702 11.7656ZM64.5984 10.2363C64.368 10.1035 64.0887 10.0371 63.7605 10.0371C63.3309 10.0371 62.9891 10.2012 62.7352 10.5293C62.4852 10.8574 62.3602 11.3086 62.3602 11.8828V15H60.4676V8.51953H62.3602V9.73828H62.3836C62.6961 8.85156 63.2645 8.4082 64.0887 8.4082C64.3113 8.4082 64.4813 8.43359 64.5984 8.48438V10.2363Z"
+                        fill="#FCFFFF" />
+                    <defs>
+                        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                            <use xlink:href="#image0" transform="translate(-0.00526175) scale(0.00944414 0.00917431)" />
+                        </pattern>
+                        <linearGradient id="paint0_linear" x1="68.5769" y1="-18.0357" x2="119.206" y2="11.9901"
+                            gradientUnits="userSpaceOnUse">
+                            <stop offset="0.2636" stop-color="#0D544F" />
+                            <stop offset="1" stop-color="#0D544F" />
+                        </linearGradient>
+                        <image id="image0" width="107" height="109"
+                            xlink:href="data:image/png;base64,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" />
+                    </defs>
+                </svg></h1>
+            <h2 class="subtitle">Shorten URLs using invisible spaces.</h2>
+        </section>
+    </header>
+    <main>
+        <section class="section">
+            <div class="tile is-ancestor">
+                <div class="tile is-vertical is-parent">
+                    <div class="tile is-child notification">
+                        <div class="content">
+                            <p class="subtitle is-size-4">Shorten a URL</p>
+                            <div class="content">
+                                <form id="shorten">
+                                    <label for="shorten-url" class="label">Long URL to shorten</label>
+                                    <div class="field has-addons">
+                                        <div class="control is-expanded">
+                                            <input id="shorten-url" class="input" type="url" maxlength="500"
+                                                minlength="1" required placeholder="Long URL (max 500 characters)"
+                                                autofocus />
+                                        </div>
+                                        <div class="control">
+                                            <button id="shorten-submit" type="submit"
+                                                class="button is-primary has-text-dark">
+                                                Shorten
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <label for="shorten-result" class="label">Result</label>
+                                    <div class="field has-addons">
+                                        <div class="control is-expanded">
+                                            <input readonly id="shorten-result" class="input" type="url"
+                                                placeholder="Shortened URL" />
+                                        </div>
+                                        <div class="control">
+                                            <button id="copy" type="button" class="button"
+                                                data-clipboard-target="#shorten-result" disabled>
+                                                Copy
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tile is-child notification">
+                        <div class="content columns">
+                            <div class="column">
+                                <p class="subtitle is-size-4">About</p>
+                                <p>
+                                    Made by <a href="https://jonah.pw">Jonah Snider</a> and
+                                    <a href="https://github.com/MicroDroid">OverCoder</a>
+                                </p>
+                                <p>
+                                    Click here: <a href="http://121.41.48.167">404Lab</a>
+                                </p>
+                                <p>
+                                    <a href="https://www.producthunt.com/posts/zero-width-shortener?utm_source=badge-top-post-badge&amp;utm_medium=badge&amp;utm_souce=badge-zero-width-shortener"
+                                        target="_blank" rel="noopener noreferrer">
+                                        <img src="https://api.producthunt.com/widgets/embed-image/v1/top-post-badge.svg?post_id=161876&amp;theme=dark&amp;period=daily"
+                                            alt="Zero Width Shortener - Shorten URLs with zero-width characters | Product Hunt Embed"
+                                            width="250px" height="54px" />
+                                    </a>
+                                </p>
+                            </div>
+                            <div class="column">
+                                <p class="subtitle is-size-4">Tech</p>
+                                <p>This website was made with <a href="http://121.41.48.167">404Lab</a></p>
+                                <p>
+                                    The API was made with <a href="https://github.com/zws-im/zws">Fastify, Prisma, and
+                                        TypeScript</a>
+                                </p>
+                                <p><a href="https://zws.im">This site is powered by zws.im</a></p>
+                            </div>
+                            <div class="column">
+                                <p class="subtitle is-size-4">Links</p>
+                                <p><a href="https://github.com/zws-im">GitHub</a></p>
+                                <p><a href="https://t.me/EnjoyDigitalLife">Telegram</a></p>
+                                <p><a href="https://opencollective.com/zws">Support author on OpenCollective</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tile is-6 is-parent">
+                    <div class="tile is-child notification">
+                        <div class="content">
+                            <p class="subtitle is-size-4">Get URL usage stats</p>
+                            <div class="content">
+                                <form id="stats">
+                                    <label for="stats-url" class="label">Short URL to get stats for</label>
+                                    <div class="field has-addons">
+                                        <div class="control is-expanded">
+                                            <input id="stats-url" class="input" type="url" maxlength="500" minlength="1"
+                                                required placeholder="Short URL" />
+                                        </div>
+                                        <div class="control">
+                                            <button id="stats-submit" type="submit"
+                                                class="button is-primary has-text-dark">Check</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="content">
+                                <p id="stats-result"></p>
+                            </div>
+                            <div id="chart"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="assets/ts/index.ts"></script>
+
+    <!-- Cloudflare Web Analytics -->
+    <script defer src="https://static.cloudflareinsights.com/beacon.min.js"
+        data-cf-beacon='{"token": "c963bb0b1bb646ba8b86838c380d41d2"}'></script>
+    <!-- End Cloudflare Web Analytics -->
+</body>
+
+</html>
